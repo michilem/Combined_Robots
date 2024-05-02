@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/egh_gripper_common" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/franka_ros" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/rbkairos_common" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/rbkairos_sim" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/roboticsgroup_gazebo_plugins" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/robotnik_msgs" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/robotnik_sensors" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/summit_xl_common" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/universal_robot" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/wsg50-ros-pkg" vcs="Git" />
+  </component>
+</project>
