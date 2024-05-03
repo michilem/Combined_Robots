@@ -27,25 +27,25 @@
     <arg name="sim" value="$(arg sim)"/>
   </include>
 
-  <rosparam file="$(find franka_gazebo)/config/franka_hw_sim.yaml" command="load" ns="gripper" subst_value="true" />
-  <rosparam file="$(find franka_gazebo)/config/sim_controllers.yaml" command="load" ns="arm" subst_value="true" />
+  <!--rosparam file="$(find franka_gazebo)/config/franka_hw_sim.yaml" command="load" ns="gripper" subst_value="true" />
+  <rosparam file="$(find franka_gazebo)/config/sim_controllers.yaml" command="load" ns="arm" subst_value="true" /-->
 
   <!-- Arm and gripper control for simulation -->
   <group if="$(arg sim)"># Publish joint_states
 
     <group if="$(arg sim_arm_control)">
 
-      <node name="controller_spawner_arm" pkg="controller_manager" type="spawner" respawn="false" output="screen" args="
-        $(arg arm_controllers)
-      "/>
+      <node name="controller_spawner_arm" pkg="controller_manager" type="spawner" respawn="false" output="screen"
+            args="$(arg arm_controllers)"
+      />
 
     </group>
 
     <group if="$(arg sim_gripper_control)">
 
-      <node name="controller_spawner_gripper" pkg="controller_manager" type="spawner" respawn="false" output="screen" args="
-        $(arg gripper_controllers)
-      "/>
+      <node name="controller_spawner_gripper" pkg="controller_manager" type="spawner" respawn="false" output="screen"
+            args="$(arg gripper_controllers)"
+      />
 
     </group>
 
